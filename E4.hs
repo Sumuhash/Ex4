@@ -35,7 +35,7 @@ numNeg x = length [i | i <- x, i<0]
 -- return a list of squares of even integers between low and high, inclusive.
 -- No recursion, no higher-order functions. Use list comprehension!
 genSquares :: Int -> Int -> [Int]
-genSquares x y = [i*i |i <-[x..y], mod i 2 == 0 ]
+genSquares x y = [i*i |i <-[x..y], even i ]
 
 -- |triples n 
 -- return a list of triples (x,y,z) all less than or equal to n, such
