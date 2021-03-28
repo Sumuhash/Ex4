@@ -29,7 +29,7 @@ def num_neg(xs_1):
     return len([x for x in xs_1 if x < 0])
 
 
-def gen_sqaures(low, high):
+def gen_squares(low, high):
     """Return a list of squares of even integers between low and high, inclusive.
     No recursion, no higher-order functions. Use list comprehension!
     """
