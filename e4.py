@@ -12,7 +12,7 @@ def to_pairs(xs_1, ys_1):
     """Return a list of pairs of corresponding elements from xs and ys,
     interleaved. The remaining elements of the longer list are ignored.
     """
-    return [zip(xs_1, ys_1)]
+    return list(zip(xs_1, ys_1))
 
 
 def repeat(func, x_1, n_1):
@@ -42,5 +42,5 @@ def triples(n_1):
     ealier triples.
     No recursion, no higher-order functions. Use list comprehension!
     """
-    return [(a, b, c) for a in range(1, n_1) for b in range(
-        a, n_1)for c in range(b, n_1) if a ** 2 + b ** 2 == c ** 2]
+    return [(a, b, c) for a in range(1, n_1+1) for b in range(
+        a, n_1+1)for c in range(b, n_1+1) if a ** 2 + b ** 2 == c ** 2]
