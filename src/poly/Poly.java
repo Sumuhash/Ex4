@@ -31,7 +31,7 @@ public class Poly {
     
     List<String> xs3 = Arrays.asList(new String [] {"AAA", "BBB", "CCC"});
     List<Integer> ys3 = Arrays.asList(new Integer [] {1, 2, 3});
-    for (Pair <String, Integer> item : Interleaver.toPairs(xs3, ys3)) {
+    for (Pair<String, Integer> item : Interleaver.toPairs(xs3, ys3)) {
       System.out.print(String.format("(%s,%s) ", item.getFirst(), item.getSecond()));
     }
     System.out.println();
