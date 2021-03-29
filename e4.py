@@ -5,7 +5,7 @@ def interleave(xs_1, ys_1):
     """Return a list of corresponding elements from xs and ys,
     interleaved. The remaining elements of the longer list are ignored.
     """
-    return [* sum(zip(xs_1, ys_1), ())]
+    return list(sum(zip(xs_1, ys_1), ()))
 
 
 def to_pairs(xs_1, ys_1):
